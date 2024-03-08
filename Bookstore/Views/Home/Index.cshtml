@@ -3,6 +3,32 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+	<h1 class="display-4">Welcome</h1>
+
+	<div class="row">
+
+		<div class="four col-md-3">
+			<div class="counter-box colored">
+				<i class="fa fa-thumbs-o-up"></i>
+				<span class="counter">@ViewData["Authors"]</span>
+				<p>Authors</p>
+			</div>
+		</div>
+		<div class="four col-md-3">
+			<div class="counter-box">
+				<i class="fa fa-group"></i>
+				<span class="counter">@ViewData["Books"]</span>
+				<p>Books</p>
+			</div>
+		</div>
+		<div class="four col-md-3">
+			<div class="counter-box">
+				<i class="fa  fa-shopping-cart"></i>
+				<span class="counter">@ViewData["Genres"]</span>
+				<p>Genres</p>
+			</div>
+		</div>
+	</div>
+
 </div>
